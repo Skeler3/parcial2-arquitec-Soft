@@ -1,0 +1,12 @@
+{
+  "name": "suscriptor2-js",
+  "version": "1.0.0",
+  "description": "Suscriptor 2: guarda los pedidos JSON recibidos de RabbitMQ en un archivo TXT",
+  "main": "suscriptor2.js",
+  "scripts": {
+    "start": "node suscriptor2.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}

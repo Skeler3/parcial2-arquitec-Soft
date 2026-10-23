@@ -1,0 +1,14 @@
+# Panel:     http://localhost:15672  (usuario guest / clave guest)
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"     # puerto AMQP (lo usan los 3 programas)
+      - "15672:15672"   # panel web
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq   # conserva colas y mensajes entre reinicios
+    restart: unless-stopped
+
+volumes:
+  rabbitmq_data:

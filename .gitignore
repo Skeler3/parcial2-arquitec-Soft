@@ -1,0 +1,12 @@
+# Dependencias y compilados (se regeneran con npm install / mvn compile)
+node_modules/
+target/
+__pycache__/
+*.pyc
+
+# Datos generados al ejecutar
+*.db
+pedidos.txt
+
+# Configuración local de VS Code
+.vscode/
